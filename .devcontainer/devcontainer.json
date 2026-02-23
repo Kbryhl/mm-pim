@@ -1,8 +1,11 @@
 {
-  "image": "mcr.microsoft.com/devcontainers/php:8.2",
+  "image": "ubuntu:22.04",
   "features": {
+    "ghcr.io/devcontainers/features/php:1": {
+      "version": "8.2"
+    },
     "ghcr.io/devcontainers/features/mysql:1": {}
   },
   "forwardPorts": [8000, 3306],
-  "postCreateCommand": "apt-get update && apt-get install -y php-mysql"
+  "postCreateCommand": "apt-get update && apt-get install -y php-mysql libssl3"
 }
