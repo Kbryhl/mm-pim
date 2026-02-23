@@ -4,5 +4,5 @@
     "ghcr.io/devcontainers/features/mysql:1": {}
   },
   "forwardPorts": [8000, 3306],
-  "postCreateCommand": "apt-get update && apt-get install -y git curl sudo && service mysql start"
+  "postCreateCommand": "docker-php-ext-install mysqli && apt-get update && apt-get install -y git curl"
 }
