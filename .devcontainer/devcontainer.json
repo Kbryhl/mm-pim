@@ -1,0 +1,8 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/php:8.2",
+  "features": {
+    "ghcr.io/devcontainers/features/mysql:1": {}
+  },
+  "forwardPorts": [8000, 3306],
+  "postCreateCommand": "apt-get update && apt-get install -y php-mysql"
+}
