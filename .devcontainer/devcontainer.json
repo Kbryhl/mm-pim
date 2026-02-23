@@ -1,9 +1,15 @@
 {
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "image": "mcr.microsoft.com/devcontainers/php:8.2-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/mysql:1": {}
   },
-  "forwardPorts": [8000, 3306]
+  "forwardPorts": [8000, 3306],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "felixbecker.php-debug",
+        "felixbecker.php-intellisense"
+      ]
+    }
+  }
 }
