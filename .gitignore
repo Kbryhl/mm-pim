@@ -1,0 +1,36 @@
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Composer
+vendor/
+composer.lock
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Database backups
+*.sql
+!database/schema.sql
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node modules (if using npm)
+node_modules/
+package-lock.json
+
+# Configuration (local)
+config/database.php (keep this, but developers should update locally)
