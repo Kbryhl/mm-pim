@@ -1,8 +1,9 @@
 {
-  "image": "php:8.2-cli",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "features": {
     "ghcr.io/devcontainers/features/mysql:1": {}
   },
-  "forwardPorts": [8000, 3306],
-  "postCreateCommand": "docker-php-ext-install mysqli && apt-get update && apt-get install -y git curl"
+  "forwardPorts": [8000, 3306]
 }
